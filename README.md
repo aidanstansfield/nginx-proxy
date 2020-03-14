@@ -425,28 +425,6 @@ will be used on any virtual host which does not have a `/etc/nginx/vhost.d/{VIRT
 
 Before submitting pull requests or issues, please check github to make sure an existing issue or pull request is not already open.
 
-#### Running Tests Locally
-
-To run tests, you need to prepare the docker image to test which must be tagged `jwilder/nginx-proxy:test`:
-
-    docker build -t jwilder/nginx-proxy:test .  # build the Debian variant image
-
-and call the [test/pytest.sh](test/pytest.sh) script.
-
-Then build the Alpine variant of the image:
-
-    docker build -f Dockerfile.alpine -t jwilder/nginx-proxy:test .  # build the Alpline variant image
-
-and call the [test/pytest.sh](test/pytest.sh) script again.
-
-
-If your system has the `make` command, you can automate those tasks by calling:
-
-    make test
-
-
-You can learn more about how the test suite works and how to write new tests in the [test/README.md](test/README.md) file.
-
 ### Need help?
 
 If you have questions on how to use the image, please ask them on the [Q&A Group](https://groups.google.com/forum/#!forum/nginx-proxy)
