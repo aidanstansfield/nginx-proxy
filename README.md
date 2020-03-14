@@ -1,3 +1,21 @@
+# My Changes
+I've added support for arm32v7 architecture hosts (like the Raspberry Pi!)
+
+To find out the inspiration for this project, head over to [my blog](https://aidanstansfield.github.io)
+
+### Usage
+To use the arm32v7 architecture version, you can use the docker image available on [my repo](https://hub.docker.com/repository/docker/aidanstansfield/nginx-proxy) with:
+
+`aidanstansfield/nginx-proxy:arm32v7`
+
+Or, you can clone this repo and modify/build it yourself with
+
+`docker build -t nginx-proxy -f Dockerfile.arm32v7 .`
+
+Now here's the rest of the README.md from the original repo.
+
+---
+
 ![latest 0.7.0](https://img.shields.io/badge/latest-0.7.0-green.svg?style=flat)
 ![nginx 1.17.8](https://img.shields.io/badge/nginx-1.17.8-brightgreen.svg) ![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) [![Build Status](https://travis-ci.org/jwilder/nginx-proxy.svg?branch=master)](https://travis-ci.org/jwilder/nginx-proxy) [![](https://img.shields.io/docker/stars/jwilder/nginx-proxy.svg)](https://hub.docker.com/r/jwilder/nginx-proxy 'DockerHub') [![](https://img.shields.io/docker/pulls/jwilder/nginx-proxy.svg)](https://hub.docker.com/r/jwilder/nginx-proxy 'DockerHub')
 
